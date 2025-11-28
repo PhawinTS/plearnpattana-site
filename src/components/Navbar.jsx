@@ -17,10 +17,10 @@ export default function Navbar() {
 
         {/* ขวา: เมนู */}
         <div className="space-x-6 hidden md:flex">
-          <a href="#home" className="text-gray-700 hover:text-blue-600">หน้าแรก</a>
-          <a href="#about" className="text-gray-700 hover:text-blue-600">เกี่ยวกับ</a>
-          <a href="#projects" className="text-gray-700 hover:text-blue-600">กิจกรรม</a>
-          <a href="#contact" className="text-gray-700 hover:text-blue-600">ติดต่อ</a>
+          <a href="/" className="text-gray-700 hover:text-blue-600">หน้าแรก</a>
+          <a href="/poomthai" className="text-gray-700 hover:text-blue-600">ภูมิปัญญาไทยช่วงนั้น ๒</a>
+          {/* <a href="/typeOfWord" className="text-gray-700 hover:text-blue-600">ประเภทของคำ</a> */}
+          {/* <a href="#contact" className="text-gray-700 hover:text-blue-600">ติดต่อ</a> */}
         </div>
 
       </div>

@@ -1,15 +1,27 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Banner from "./components/Banner";
 import Description from "./components/Description";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import PoomThaiPage from "./components/PoomThaiPage"; // สร้างไฟล์นี้
+// import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="w-screen min-h-screen font-serif overflow-x-hidden m-0 p-0">
+    <Router>
       <Navbar />
-      <Banner />
-      <Description />
-      {/* <Footer /> */}
-    </div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Banner />
+              <Description />
+              {/* <Footer /> */}
+            </>
+          }
+        />
+        <Route path="/poomthai" element={<PoomThaiPage />} />
+      </Routes>
+    </Router>
   );
 }
