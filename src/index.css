@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global reset */
+* {
+  @apply m-0 p-0 box-border;
+}
+
+/* Root settings */
+:root {
+  @apply bg-white text-gray-900 font-sans;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* HTML + body default */
+html, body {
+  @apply w-full min-h-screen overflow-x-hidden;
+}
